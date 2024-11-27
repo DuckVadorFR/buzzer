@@ -9,11 +9,11 @@ html
       img.logo(src='/buzzer-logo.svg')
 
     div.container
-      h2.js-active=`${users.length} joined`
+      h2.js-active=`${users.length} a rejoint`
       ol.js-buzzes
         each buzz in buzzes
           li=`${buzz.name} on Team ${buzz.team}`
-      button.js-clear='Clear buzzes'
+      button.js-clear='Mise à zero des buzzers'
 
     script(src='/socket.io/socket.io.js')
     script(src='/host.js')
