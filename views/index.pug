@@ -13,14 +13,14 @@ html
       form.view.js-join
         img(src="/lets-play.png" class="main-image")
         h2="Let's play!"
-        input(type='text' name='name' placeholder='Your name' required='required')
-        input(type='number' name='team' placeholder='Your team number' required='required')
-        button(type='submit')='Join!'
+        input(type='text' name='nom' placeholder='Ton nom' required='requis')
+        input(type='number' name='équipe' placeholder='Ton n° d'équipe' required='requis')
+        button(type='submit')='Rejoins!'
 
       div.view.js-joined.hidden
         button.js-buzzer.buzzer()='Buzz!!!'
         p.js-joined-info=""
-        button.js-edit.secondary='Change teams'
+        button.js-edit.secondary='Change d'équipe'
 
     script(src='/socket.io/socket.io.js')
     script(src='/join.js')
